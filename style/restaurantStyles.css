@@ -1,0 +1,24 @@
+/*
+Colors:
+#01101E DarkDarkBlue
+#082846 DarkBlue
+#2A4E6E Blue
+#627D96 LightBlue
+#BEC7CF LightLightBlue
+*/
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+    /*background-color: #627D96;*/
+    padding-top: 4px;
+    padding-bottom: 20px;
+    font-family: 'Global Serif';
+}
+
+footer {
+    text-align: center;
+    /*background-color: #627D96;*/
+    padding-top: 10px;
+    font-size: 1.2em;
+}
