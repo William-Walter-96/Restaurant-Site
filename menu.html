@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!
 	Name: William Walter
 	Date Created: Jan. 9th 2020
@@ -13,120 +13,212 @@
 			  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 			  crossorigin="anonymous">
 		<link rel="stylesheet" href="style/restaurantStyles.css" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css" />
+
 
 		<style>
-			body
-			{
+			body {
 				background-color: #BEC7CF;
 			}
-			nav a 
-			{
+
+			nav a {
 				background-color: #01101E;
 				color: #BEC7CF;
 			}
-			nav a:hover 
-			{
+
+			nav a:hover {
 				font-weight: bold;
 			}
-			nav a:visited 
-			{
+
+			nav a:visited {
 				background-color: #627D96;
 				color: #01101e;
 			}
-			nav a:active
-			{
-				text-decoration:none;
+
+			nav a:active {
+				text-decoration: none;
 			}
-			th
-			{
-				font-size:1.2em;
+
+			th {
+				font-size: 1.2em;
 			}
-			td
-			{
-				font-size:1em;
+
+			td {
+				font-size: 1em;
 			}
-			table
-			{
-				width:90%;
+
+			table {
+				width: 90%;
 			}
-			
 		</style>
 	</head>
 	
 	<body>
-		<header>
-			<h1>Smith's Bar and Grill</h1>
+
+		<header class="jumbotron">
+			<h1 style="font-size:70px">Smith's Bar and Grill</h1>
+
+			<div id="carousel" class="carousel slide" data-ride="carousel" style="margin-top:20px">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<h3 class="font-italic mt-5 text-right" style="color:#aaa339;"><span class="badge-pill badge-secondary">New!</span> Smith's Bar and Grill is opening a new location!</h3>
+						<h5 class="font-italic text-right" style="color:#aaa339;">(Call for more info)</h5>
+					</div>
+					<div class="carousel-item">
+						<h3 class="font-italic mt-5 text-right" style="color:#aaa339">We're rolling out our summer menu!</h3>
+						<h5 class="font-italic text-right" style="color:#aaa339">See menu for special options(*)</h5>
+					</div>
+					<div class="carousel-item">
+						<h3 class="font-italic mt-5 text-right" style="color:#aaa339">Drink of the Month: sg special brew</h3>
+						<div style="padding:16px"></div>
+					</div>
+				</div>
+			</div>
 		</header>
-		
-		
+
+		<div id="javascriptEnabled" style="display:block; background-color:aqua; padding: 20px;">
+			<p style="color: red;">You do not have Javascript enabled on your browser. It is recommended that you have it turned on as it will inprove your experience with this site.</p>
+		</div>
+
 		<nav>
 			<hr />
-			<p><a href="home.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a></p>
+			<p style="margin-left:5px"><a class="icon octicon octicon-home" href="home.html" style="font-size:50px;"></a> <a class="btn badge-pill" href="menu.html">Menu</a> <a class="btn badge-pill" href="contact.html">Contact Us</a></p>
 			<hr />
 		</nav>
-		
-		
-		<table class="table table-borderless">
-			<tr>
-				<th>Burger and Fries</th>
-				<th>Hot Dog and Chips</th>
-				<th>Italian Sausage and Peppers</th>
-			</tr>
-			
-			<tr>
-				<td>
-					<p>An American Classic!</p>
-					<p>Your choice - with or without cheese</p>
-					<p>Pickle, onion, tomato, and lettuce</p>
-					<p>Served with our famous thick cut french fries</p>
-					<p>$7.95</p>
-				</td>
-				<td>
-					<p>An Summer Classic!</p>
-					<p>Your choice - white or wheat bun</p>
-					<p>Relish, mustard, and ketchup</p>
-					<p>Served with our house-made chips</p>
-					<p>$7.95</p>
-				</td>
-				<td>
-					<p>An All-Time Favorite!</p>
-					<p>Your choice - mild or spicy Cole Slaw</p>
-					<p>Served with garlic mashers</p>
-					<p>$10.95</p>
-				</td>
-			</tr>
-			
-			<tr>
-				<th>Tenderloin Sandwich and Chips</th>
-				<th>House Salad</th>
-				<th>Brisket Sandwich and Fries</th>
-			</tr>
-			
-			<tr>
-				<td>
-					<p>Really Hits the Spot!</p>
-					<p>Plain or Sesame Seed Bun</p>
-					<p>Pickle, onion, tomato, and lettuce</p>
-					<p>Served with our house-made chips</p>
-					<p>$8.95</p>
-				</td>
-				<td>
-					<p>On the Lighter Side</p>
-					<p>Your choice - with or without cheese</p>
-					<p>Iceberg lettuce, tomatoes, peppers</p>
-					<p>Thousand Island or Ranch</p>
-					<p>Dressing served with a dinner roll</p>
-					<p>$6.95</p>
-				</td>
-				<td>
-					<p>A Taste of Texas!</p>
-					<p>Smoked Brisket on thick-cut Texas Toast</p>
-					<p>Cole Slaw</p>
-					<p>Served with our famous thick cut french fries</p>
-					<p>$7.95</p>
-				</td>
-			</tr>
-		</table>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<table class="table table-borderless">
+						<tr>
+							<th>Burger and Fries</th>
+						</tr>
+						<tr>
+							<td>
+								<p>An American Classic!</p>
+								<p>Your choice - with or without cheese</p>
+								<p>Pickle, onion, tomato, and lettuce</p>
+								<p>Served with our famous thick cut french fries</p>
+								<p>$7.95</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<table class="table table-borderless">
+						<tr>
+							<th>Hot Dog and Chips</th>
+						</tr>
+						<tr>
+							<td>
+								<p>A Summer Classic!</p>
+								<p>Your choice - white or wheat bun</p>
+								<p>Relish, mustard, and ketchup</p>
+								<p>Served with our house-made chips</p>
+								<p>$7.95</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<table class="table table-borderless">
+						<tr>
+							<th>Italian Sausage and Peppers</th>
+						</tr>
+						<tr>
+							<td>
+								<p>An All-Time Favorite!</p>
+								<p>Your choice - mild or spicy Cole Slaw</p>
+								<p>Served with garlic mashers</p>
+								<p>$10.95</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<table class="table table-borderless">
+						<tr>
+							<th>Tenderloin Sandwich and Chips</th>
+						</tr>
+						<tr>
+							<td>
+								<p>Really Hits the Spot!</p>
+								<p>Plain or Sesame Seed Bun</p>
+								<p>Pickle, onion, tomato, and lettuce</p>
+								<p>Served with our house-made chips</p>
+								<p>$8.95</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<table class="table table-borderless">
+						<tr>
+							<th>House Salad</th>
+						</tr>
+						<tr>
+							<td>
+								<p>On the Lighter Side</p>
+								<p>Your choice - with or without cheese</p>
+								<p>Iceberg lettuce, tomatoes, peppers</p>
+								<p>Thousand Island or Ranch</p>
+								<p>Dressing served with a dinner roll</p>
+								<p>$6.95</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<table class="table table-borderless">
+						<tr>
+							<th>Brisket Sandwich and Fries</th>
+						</tr>
+						<tr>
+							<td>
+								<p>A Taste of Texas!</p>
+								<p>Smoked Brisket on thick-cut Texas Toast</p>
+								<p>Cole Slaw</p>
+								<p>Served with our famous thick cut french fries</p>
+								<p>$7.95</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<table class="table table-borderless">
+						<tr>
+							<th>Cobb Salad*</th>
+						</tr>
+						<tr>
+							<td>
+								<p>Flavorful and Satisfying!</p>
+								<p>Chicken Breast and Hardboiled Egg</p>
+								<p>Bacon bits, Mixed Greens, and Grape Tomatoes</p>
+								<p>Served with our shreded swiss cheese and our house dressing</p>
+								<p>$6.95</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<table class="table table-borderless">
+						<tr>
+							<th>Black Bean Tacos*</th>
+						</tr>
+						<tr>
+							<td>
+								<p>Spicy Vegetarian Option!</p>
+								<p>Black Beans and Sweet Potato chunks</p>
+								<p>Avocado, salsa, and cilantro</p>
+                                <p>Served in a house made corn tortilla</p>
+								<p>$6.95</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
 
 		<table class="table table-borderless table-striped">
 			<thead>
@@ -167,15 +259,34 @@
 						$8.00
 					</td>
 				</tr>
+				<tr>
+					<td colspan="2">
+						SG Special Brew
+					</td>
+					<td>
+						$6.00
+					</td>
+				</tr>
 			</tbody>
 		</table>
-		
-		
+
+
 		<footer>
 			<hr />
 			<p>400 Wilkens Ave. Halls, WA 12345</p>
-			<p>(123)456-7890</p>
+			<p>(123) 456-7890</p>
 			<hr />
 		</footer>
+
+		<script src="script/main.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+				crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+				integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+				crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+				integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+				crossorigin="anonymous"></script>
 	</body>
 </html>
